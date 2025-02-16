@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>CineTime - Movie Booking System</h1>
+    </header>
+    
+    <main>
+        <h2>Select a Movie</h2>
+        <select id="movie">
+            <option value="190">Vidaa Muyarchi - ₹190</option>
+            <option value="190">Avengers - ₹190</option>
+            <option value="190">Jailer - ₹190</option>
+            <option value="190">Coolie - ₹190</option>
+            <option value="190">Greatest of All Time - ₹190</option>
+        </select>
+
+        <!-- Movie Screen Display -->
+        <div class="screen-container">
+            <div class="screen">Screen</div>
+        </div>
+
+        <h2>Select Seats</h2>
+        <div class="seat-container">
+            <!-- Seats will be generated dynamically -->
+        </div>
+
+        <h3>Total Price: ₹<span id="total">0</span></h3>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

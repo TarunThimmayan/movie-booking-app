@@ -1,0 +1,66 @@
+/* Center everything */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: #1c1c1c;
+    color: white;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+/* Style the movie screen */
+.screen-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.screen {
+    width: 60%;
+    height: 80px;
+    background: #ccc;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 80px;
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+}
+
+/* Seat layout similar to a real theater */
+.seat-container {
+    display: grid;
+    grid-template-columns: repeat(8, 50px);
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Seat styling */
+.seat {
+    width: 50px;
+    height: 50px;
+    background: gray;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Selected seat */
+.seat.selected {
+    background: green;
+}
+
+/* Already booked seat */
+.seat.booked {
+    background: red;
+    cursor: not-allowed;
+}
+
+/* Curved seat layout like PVR */
+.seat-container:nth-child(2) { transform: rotate(-5deg); }
+.seat-container:nth-child(3) { transform: rotate(-3deg); }
+.seat-container:nth-child(4) { transform: rotate(-1deg); }
+.seat-container:nth-child(5) { transform: rotate(0deg); }
